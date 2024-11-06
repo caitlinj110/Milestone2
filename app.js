@@ -12,7 +12,7 @@ app.post('/submit-form', (req, res) => {
     const username = req.body.username; // access form data
     const password = req.body.password;
     // Add validation logic here
-    res.send(`Username is ${username} and Password is ${password}`);
+    res.send(`Username: ${username} Password: ${password}`);
 });
 
 app.listen(port, () => {
